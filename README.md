@@ -18,6 +18,12 @@ Use Node 22.13+ and pnpm. Install with `pnpm install`, start with `pnpm dev`, an
 
 For the managed Sites environment use its supervised preview workflow. The runtime and hosting configuration are included for reproducible Sites deployments.
 
+## Vercel deployment
+
+Import this repository with the Next.js framework preset and the repository root as the Root Directory. The committed `vercel.json` runs `npm run build:vercel` (`next build`) and uses `.next` as the output directory. The separate `pnpm build` command produces the Sites/Cloudflare build and must not be used as Vercel's build command.
+
+Pushes to the connected production branch trigger Vercel deployments. To check the Vercel build locally, run `pnpm run build:vercel`.
+
 ## Business content
 
 Edit `lib/aspire.ts` for products, contact details, client brands and locations. Business photographs are in `public/images`; the original company profile is `public/aspire-company-profile.pdf`.
@@ -32,7 +38,7 @@ The form validates required inputs, prepares a message, and opens an email draft
 
 ## SEO and domain
 
-Set `NEXT_PUBLIC_SITE_URL` to the final public HTTPS origin before building for a custom domain. It is used for canonical metadata, structured data and sitemap URLs. Private deployment access prevents search-engine indexing until the site is shared publicly. Search ranking is not guaranteed.
+Set `NEXT_PUBLIC_SITE_URL` to the final public HTTPS origin before building for a custom domain. It is used for canonical metadata, structured data and sitemap URLs. On Vercel, the default uses `VERCEL_PROJECT_PRODUCTION_URL`; other hosts retain the Sites origin fallback. Private deployment access prevents search-engine indexing until the site is shared publicly. Search ranking is not guaranteed.
 
 ## Map
 

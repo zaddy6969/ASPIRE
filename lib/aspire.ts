@@ -1,5 +1,5 @@
 export const company={name:'ASPIRE ENTERPRISES',email:'aspirepacs@gmail.com',phone:'+91 88675 78959',phone2:'+91 99006 60768',headquarters:'Kamath Layout, Vivekanandanagar, Bengaluru, Karnataka 560091',delhi:'G33, Ground Floor, Vikas Mall, Shahdara, Delhi 110032',warehouse:'No. 27, Raheem Saheb Layout, Magadi Main Road, Kachohalli, Bengaluru 560091'};
-export const siteUrl=(process.env.NEXT_PUBLIC_SITE_URL||'https://aspire-enterprises.zubair428kg.chatgpt.site').replace(/\/$/,'');
+export const siteUrl=(process.env.NEXT_PUBLIC_SITE_URL||(process.env.VERCEL_PROJECT_PRODUCTION_URL?`https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`:'https://aspire-enterprises.zubair428kg.chatgpt.site')).replace(/\/$/,'');
 export type Product={slug:string;name:string;category:string;image:string;description:string;uses:string[]};
 export const products:Product[]=[
 {slug:'corrugated-box',name:'Corrugated Boxes',category:'Boxes',image:'corrugated-box',description:'Everyday shipping and storage boxes, made around your product dimensions and packing requirements.',uses:['E-commerce dispatch','Storage and transport','Custom printed packaging']},
