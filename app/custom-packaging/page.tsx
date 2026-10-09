@@ -1,0 +1,4 @@
+import type {Metadata} from 'next';
+import {CustomPage} from '@/components/aspire/pages';
+export const metadata:Metadata={"title": "Custom Packaging & White Label Manufacturing", "description": "Made-to-order boxes, bags and pouches. Discuss custom printing, brand artwork and white-label manufacturing.", "alternates": {"canonical": "/custom-packaging"}, "openGraph": {"title": "Custom Packaging & White Label Manufacturing", "description": "Made-to-order boxes, bags and pouches. Discuss custom printing, brand artwork and white-label manufacturing."}, "twitter": {"card": "summary", "title": "Custom Packaging & White Label Manufacturing", "description": "Made-to-order boxes, bags and pouches. Discuss custom printing, brand artwork and white-label manufacturing."}};
+export default function Page(){return <CustomPage/>}

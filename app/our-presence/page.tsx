@@ -1,0 +1,4 @@
+import type {Metadata} from 'next';
+import {PresencePage} from '@/components/aspire/pages';
+export const metadata:Metadata={"title": "Our Presence in India & Gulf Countries", "description": "Explore Aspire service coverage across India and the Gulf, with 4 warehouses in India and 15+ clients served.", "alternates": {"canonical": "/our-presence"}, "openGraph": {"title": "Our Presence in India & Gulf Countries", "description": "Explore Aspire service coverage across India and the Gulf, with 4 warehouses in India and 15+ clients served."}, "twitter": {"card": "summary", "title": "Our Presence in India & Gulf Countries", "description": "Explore Aspire service coverage across India and the Gulf, with 4 warehouses in India and 15+ clients served."}};
+export default function Page(){return <PresencePage/>}
