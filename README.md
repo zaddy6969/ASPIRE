@@ -7,7 +7,7 @@ Responsive packaging company website built with React, TypeScript, Next.js-compa
 - Home, catalogue, 18 individual product pages, custom packaging, company overview, presence, contact and privacy pages.
 - Original Aspire mark, product photographs, client logos and company profile extracted from the supplied PDF.
 - Searchable, category-filtered catalogue and product-specific quotation handoff.
-- Leaflet map with India/Gulf views, clickable city/state coverage, 4 India warehouses and 15+ clients.
+- Self-contained SVG India map with keyboard-accessible city/state coverage, Gulf regional information, 4 India warehouses and 15+ clients.
 - Mobile navigation, keyboard-accessible dialogs, FAQs, reduced-motion support and responsive layouts.
 - Per-page metadata, canonical URLs, sitemap, robots, Organization and Product structured data.
 - Contact form prepares an enquiry for email or WhatsApp. It does not claim to send messages and requires no server-side mail credentials.
@@ -42,7 +42,13 @@ Set `NEXT_PUBLIC_SITE_URL` to the final public HTTPS origin before building for 
 
 ## Map
 
-Leaflet 1.9.4 loads OpenStreetMap tiles with visible attribution. Follow the OpenStreetMap tile usage policy; use a suitable commercial provider for high-volume traffic. If map tiles are unavailable, the complete location list remains accessible.
+The outline in `lib/india-map.ts` is simplified from the [DataMeet India / OpenStreetMap country geometry](https://github.com/datameet/maps/blob/master/Country/india-osm.geojson), credited under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). The boundary and markers use the same projection. It includes the northeast and islands and makes no external tile requests. City buttons and keyboard-selectable SVG markers update the location enquiry link.
+
+## Visual assets
+
+The catalogue retains the photographs supplied in the company profile. `public/images/packaging-editorial.webp` is a generated, illustrative packaging still life for the homepage, created with the built-in image-generation tool; it is not a photograph of a customer order or facility.
+
+Image brief: a premium editorial studio photograph of unbranded kraft corrugated and rigid presentation boxes, a paper shopping bag, an ivory carton, a kraft stand-up pouch and paper cups, on warm limestone blocks. Warm ivory backdrop, natural daylight and shadows, deep forest green / cream / kraft palette, realistic paper texture. No lettering, logos or watermarks.
 
 ## Validation
 
