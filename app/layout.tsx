@@ -1,6 +1,5 @@
 import type {Metadata} from 'next';
 import './globals.css';
-import 'leaflet/dist/leaflet.css';
 import {Header,Footer} from '@/components/aspire/chrome';
 import {company,siteUrl,locations} from '@/lib/aspire';
 export const metadata:Metadata={metadataBase:new URL(siteUrl),title:{default:'ASPIRE ENTERPRISES | Custom Packaging & Manufacturing in India',template:'%s | ASPIRE ENTERPRISES'},description:'Custom packaging, corrugated boxes, rigid boxes, paper bags, pouches, labels and protective packaging. Aspire Enterprises serves businesses across India and Gulf countries.',icons:{icon:'/favicon.png',shortcut:'/favicon.png'},openGraph:{type:'website',locale:'en_IN',siteName:company.name,title:'ASPIRE ENTERPRISES | Packaging Made for Your Business',description:'Made-to-order packaging, manufacturing and procurement across India and the Gulf.'},twitter:{card:'summary',title:'ASPIRE ENTERPRISES',description:'Packaging made for your business. India & Gulf countries.'}};
