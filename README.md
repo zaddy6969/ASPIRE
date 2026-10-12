@@ -42,7 +42,9 @@ Set `NEXT_PUBLIC_SITE_URL` to the final public HTTPS origin before building for 
 
 ## Map
 
-The outline in `lib/india-map.ts` is simplified from the [DataMeet India / OpenStreetMap country geometry](https://github.com/datameet/maps/blob/master/Country/india-osm.geojson), credited under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). The boundary and markers use the same projection. It includes the northeast and islands and makes no external tile requests. City buttons and keyboard-selectable SVG markers update the location enquiry link.
+The SVG in `lib/india-map.ts` is simplified from all 36 state/union-territory geometries in [DataMeet state boundaries](https://github.com/datameet/maps/tree/master/States), credited under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). The boundary and markers use the same projection. It includes the northeast and islands and makes no external tile requests. Nine labelled service regions have keyboard-accessible callouts and region buttons; selecting a region highlights it and lists its cities separately to avoid crowded labels. City selection updates the enquiry link. Gulf coverage has a separate regional view.
+
+Typography uses a self-hosted Latin subset of Manrope, distributed under the SIL Open Font License; the license is included at `public/fonts/OFL-Manrope.txt`.
 
 ## Visual assets
 
