@@ -22,7 +22,7 @@ export const products:Product[]=[
 {slug:'bubble-roll',name:'Bubble Rolls',category:'Protective Packaging',image:'bubble-roll',description:'Cushioning material for wrapping products and protecting surfaces during packing, handling and transit.',uses:['Fragile products','Surface protection','Protective wrapping']}
 ];
 export const categories=['All Products','Boxes','Bags & Pouches','Labels & Rolls','Protective Packaging','Food Service'];
-export const clients=[['acer','Acer'],['swiggy','Swiggy'],['cultfit','cult.fit'],['zepto','Zepto'],['britannia','Britannia'],['himalaya','Himalaya'],['mamaearth','Mamaearth'],['saint-gobain','Saint-Gobain'],['swish','Swish'],['emerge','Emerge Glass'],['prowrrap','Prowrrap'],['brand','Client brand from the Aspire company profile']];
+export const clients=[['cultfit','cult.fit'],['mamaearth','Mamaearth'],['saint-gobain','Saint-Gobain'],['himalaya','Himalaya'],['acer','Acer']];
 export const locations=[
 {name:'Bangalore',region:'Karnataka · Head office',lat:12.9716,lng:77.5946,type:'city'},
 {name:'Nelamangala',region:'Karnataka',lat:13.099,lng:77.395,type:'city'},
@@ -38,6 +38,7 @@ export const locations=[
 {name:'Rajasthan',region:'State coverage',lat:27.02,lng:74.22,type:'state'},
 {name:'Kerala',region:'State coverage · including Kochi',lat:10.85,lng:76.27,type:'state'},
 {name:'Tamil Nadu',region:'State coverage',lat:11.12,lng:78.66,type:'state'},
+{name:'Andhra Pradesh',region:'State coverage',lat:16.1,lng:80.2,type:'state'},
 {name:'Gulf countries',region:'Regional coverage · enquire for your destination',lat:25.3,lng:51.4,type:'gulf'}];
 export const faqs=[
 ['Can I customise packaging with my brand?','Yes. Aspire offers made-to-order products, custom printing and white labelling. Share your artwork, dimensions, material preference and quantity so our team can advise on the right format.'],
