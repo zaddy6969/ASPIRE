@@ -1,4 +1,4 @@
-export const company={name:'ASPIRE ENTERPRISES',email:'aspirepacs@gmail.com',phone:'+91 88675 78959',phone2:'+91 99006 60768',headquarters:'Kamath Layout, Vivekanandanagar, Bengaluru, Karnataka 560091',delhi:'G33, Ground Floor, Vikas Mall, Shahdara, Delhi 110032',warehouse:'No. 27, Raheem Saheb Layout, Magadi Main Road, Kachohalli, Bengaluru 560091'};
+export const company={name:'ASPIRE ENTERPRISES',email:'aspirepacs@gmail.com',emails:['azar@aspirepacs.com','vaseem@aspirepacs.com','Aliya@aspirepacs.com'],phone:'+91 88675 78959',phone2:'+91 99006 60768',headquarters:'Kamath Layout, Vivekanandanagar, Bengaluru, Karnataka 560091',delhi:'G33, Ground Floor, Vikas Mall, Shahdara, Delhi 110032',warehouse:'No. 27, Raheem Saheb Layout, Magadi Main Road, Kachohalli, Bengaluru 560091'};
 export const siteUrl=(process.env.NEXT_PUBLIC_SITE_URL||(process.env.VERCEL_PROJECT_PRODUCTION_URL?`https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`:'https://aspire-enterprises.zubair428kg.chatgpt.site')).replace(/\/$/,'');
 export type Product={slug:string;name:string;category:string;image:string;description:string;uses:string[]};
 export const products:Product[]=[
